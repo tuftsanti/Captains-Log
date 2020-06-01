@@ -1,0 +1,76 @@
+* {
+    background-color: #072944;
+    max-width: 100%;
+    margin: auto;
+    color: azure;
+}
+.indexContainer {
+    text-align: center;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+.indexUlContainer {
+    border: 2px solid azure;
+    width: 80%;
+    background-color: cornflowerblue;
+    display: flex;
+    padding: 15px;
+}
+.showContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid azure;
+    width: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    padding: 15px;
+}
+ul > img {
+    margin: 15px;
+}
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 50px;
+}
+h3 {
+    background-color: cornflowerblue;
+    font-size: 40px;
+    max-width: 80%;
+    padding: 20px auto;
+}
+h4, a, p {
+    background-color: cornflowerblue;
+    font-size: 20px;
+    max-width: 100%;
+    padding: 20px auto;
+    color: azure;
+}
+h2 {
+    color: darkcyan;
+    text-align: center;
+}
+li {
+    background-color: cornflowerblue;
+    text-align: center;
+    list-style-type: none;
+    color: #cc8330;
+}
+input {
+    display: block;
+    font-size: 20px;
+    /* margin: 20px auto; */
+    background-color: cornflowerblue;
+    background: #cc8330;
+    width:  fit-content;
+}
+.deleteForm {
+    background: cornflowerblue;
+}
+img {
+    display: block;
+    margin: auto;
+}
