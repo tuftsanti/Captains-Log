@@ -14,7 +14,7 @@ const User = require('./models/users.js');
 
 // Process.env
 require('dotenv').config() 
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 const mongoURI = process.env.MONGOURI
 const userController = require('./controllers/users_controller.js')
 
@@ -22,7 +22,11 @@ const userController = require('./controllers/users_controller.js')
 app.use(express.urlencoded({extended:true}));   //allows use of req.body
 app.use(methodOverride('_method'))
 app.use(express.static('public'));
-app.use(session({secret: process.env.SECRET, resave: false, saveUninitialized: false}))
+app.use(session({
+    secret: 'SECRET', //process.env.SECRET,
+     resave: false,
+      saveUninitialized: false
+    }))
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
@@ -89,6 +93,6 @@ db.once('open', ()=> {
 
 
 // LISTEN ROUTE
-app.listen(port, ()=>{
-    show(`Listening on port: ${port}...`);
+app.listen(PORT, () => {
+    show(`Listening on port: ${PORT}...`);
 })
