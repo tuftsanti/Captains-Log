@@ -15,7 +15,7 @@ const User = require('./models/users.js');
 // Process.env
 require('dotenv').config() 
 const PORT = process.env.PORT || 3000;
-const mongoURI = process.env.MONGOURI || 'mongodb://localhost/captainslog'
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/captainslog'
 const userController = require('./controllers/users_controller.js')
 
 // MIDDLEWARE

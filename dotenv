@@ -1,3 +1,3 @@
 PORT=3000
-MONGOURI=mongodb://localhost:27017/captainslog
+MONGODB_URI=mongodb://localhost:27017/captainslog
 SECRET=SecretPass
