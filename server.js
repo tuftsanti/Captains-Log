@@ -15,11 +15,11 @@ const User = require('./models/users.js');
 // Process.env
 require('dotenv').config() 
 const PORT = process.env.PORT || 3000;
-const mongoURI = process.env.MONGOURI
+const mongoURI = process.env.MONGOURI || 'mongodb://localhost/captainslog'
 const userController = require('./controllers/users_controller.js')
 
 // MIDDLEWARE
-app.use(express.urlencoded({extended:true}));   //allows use of req.body
+app.use(express.urlencoded({extended:false}));   //allows use of req.body
 app.use(methodOverride('_method'))
 app.use(express.static('public'));
 app.use(session({
@@ -34,7 +34,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 app.use('/logs', Controller);
 app.use('/user', userController)
 
-// REDIRECT ROUTE
+// HOME ROUTE
 app.get ('/', (req,res) => {
     res.redirect('/logs')
 })
