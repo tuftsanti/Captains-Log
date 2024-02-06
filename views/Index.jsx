@@ -5,7 +5,7 @@ class Index extends React.Component {
     render() {
         return (
             <Layout>
-                <div class="indexContainer">
+                <div className="indexContainer">
                     {this.props.username ? 
                     <form action="/sessions/?_method=delete" method="post">
                         <input type="submit" value="Click To Logout"/>
@@ -15,7 +15,7 @@ class Index extends React.Component {
                     <form action="/logs/new">
                         <input type="submit" value="Add a New Log"/>
                     </form>
-                <ul class="indexUlContainer">
+                <ul className="indexUlContainer">
                     {
                     this.props.logs.map((logs, index) => {
                         return (

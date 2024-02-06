@@ -15,7 +15,7 @@ class New extends React.Component {
                     <h2>Is the Ship Broken? </h2><input type="checkbox" name="isBroken"/><br/>
                     <input type="submit" value="Submit New Log"/>
                 </form>
-                <img src="https://pbs.twimg.com/media/EUoXsvnUwAI_9Sg.jpg" alt="cool" srcset=""/>
+                <img src="https://pbs.twimg.com/media/EUoXsvnUwAI_9Sg.jpg" alt="cool" srcSet=""/>
             </Layout>
         )
     }
